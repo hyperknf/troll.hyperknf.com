@@ -9,3 +9,6 @@ button {
     font-family: "Fredoka One";
     color: rgb(222, 0, 0)
 }
+.center {
+    align-items: center
+}
