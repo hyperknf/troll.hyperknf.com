@@ -1,6 +1,7 @@
 html {
     background-color: #b6ffff;
-    font-family: "Fredoka One"
+    font-family: "Fredoka One";
+    align-items: center
 }
 button {
     font-size: 17.5px;
@@ -8,9 +9,4 @@ button {
     width: 45%;
     font-family: "Fredoka One";
     color: rgb(222, 0, 0)
-}
-div {
-    align-items: center;
-    height: 100%;
-    width: 100%
 }
