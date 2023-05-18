@@ -1,10 +1,9 @@
+const fps = 60
+
 let repeat = 2
 let interval_cache = 500
 let interval = Number(document.querySelector(".interval").value)
-const loop = () => {
-    repeat += 1
-    document.querySelector(".main").innerHTML = `y${"oy".repeat(repeat)}jaj is s<b>tom</b>pid`
-}
+const loop = () => repeat += 1
 let id = setInterval(loop, 500)
 setInterval(() => {
     interval = Number(document.querySelector(".interval").value)
@@ -16,4 +15,5 @@ setInterval(() => {
         clearInterval(id)
         id = setInterval(loop, interval_cache)
     }
-}, 16.66666666666666666666666666)
+    document.querySelector(".main").innerHTML = `y${"oy".repeat(repeat)}jaj is s<b>tom</b>pid`
+}, 1000 / fps)
