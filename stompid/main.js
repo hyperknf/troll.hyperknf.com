@@ -1,5 +1,5 @@
 let repeat = 2
-let interval_cache
+let interval_cache = 500
 let interval = Number(document.querySelector(".interval").value)
 const loop = () => {
     repeat += 1
@@ -8,6 +8,9 @@ const loop = () => {
 let id = setInterval(loop, 500)
 setInterval(() => {
     interval = Number(document.querySelector(".interval").value)
+    if (interval == 0) {
+        interval = 500
+    }
     if (interval != interval_cache) {
         interval_cache = interval
         clearInterval(id)
